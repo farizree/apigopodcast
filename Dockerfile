@@ -1,6 +1,8 @@
 #FROM golang:1.12-alpine
 #FROM golang:1.12 AS builder
+
 FROM golang:alpine AS builder
+
 LABEL stage=builder
 # RUN apk add --no-cache gcc libc-dev tzdata
 RUN apk add --no-cache gcc tcptraceroute
